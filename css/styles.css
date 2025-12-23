@@ -51,6 +51,7 @@ main {
 footer {
 	text-align: center;
 	padding-top: 20px;
+	margin: 40px 0;
 	background-color: #450101;
 	font-size: 0.7em;
 	color: orange;
@@ -96,5 +97,45 @@ hr{
 p {
 	text-align: left;
 	text-indent: 2em;
+}
+
+iframe{
+	width: 100vw;
+	aspect-ratio: 16/9;
+	max-width: 100%;
+}
+
+.videoBox{
+	max-width: 400px;
+	margin: 0 30px;
+}
+
+.videoInsertOuter{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 3vw;
+	margin: 0 10vw;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #FFE8E3;
+}
+
+#teamList{
+	text-align: left;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 10px 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	/* background-color: #E8CCB0; */
+	background-color: #f7e2cd;
+}
+
+.videoInsert{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
