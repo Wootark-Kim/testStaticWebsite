@@ -1,0 +1,100 @@
+html, body{
+	/* background-color: #F7D6D0; */
+	background-color: #f7e2cd;
+	margin: 0; /* removes the margin padding to allow header background color to stretch from left to right */
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	background-color: #450101;
+	color: orange;
+	text-align: center;
+	padding: 20px;
+}
+
+nav a{
+	display: inline-block;
+	padding: 15px;
+	font-size: 1;
+	text-decoration: none; /* removes default underline setting*/
+	color: white;
+	margin: 10px;
+	background-color: #3B3B3B;
+	border: 1px solid orange;
+	border-radius: 10px;
+}
+
+main {
+	/* margin-top: 20px; */
+	text-align: center;
+	flex: 1; /* allows "main" to grow to fill all remaining vertical space */
+}
+
+.courses_nav{
+	display: flex;
+	flex-wrap: wrap; /* allows the course box to automatically move below to the next line depending on window's size */
+	gap: 10px;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.courses_nav a{
+	background-color: #450101;
+	color: white;
+	text-align: center;
+	border: none;
+	width: 100px;
+}
+
+footer {
+	text-align: center;
+	padding-top: 20px;
+	background-color: #450101;
+	font-size: 0.7em;
+	color: orange;
+}
+
+#logo{
+	border: 2px solid orange;
+	border-radius: 15px;
+	width: 120px;
+	height: auto;
+}
+
+hr{
+	border: 1px solid black;
+	width: 500px;
+}
+
+.quarter{
+	margin: 0px 20px;
+	margin-bottom: 30px;
+	border: 1px solid #7D5454;
+	border-radius: 15px;
+	/* background-color: #876A54; */
+	/* color: white; */
+	background-color: #E8CCB0;
+}
+
+.year {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.course_content{
+	text-align: left;
+	padding: 20px 3vw;
+	margin: 0 10vw;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #FFE8E3;
+}
+
+p {
+	text-align: left;
+	text-indent: 2em;
+}
+
