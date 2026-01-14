@@ -47,6 +47,15 @@ main {
 	width: 100px;
 }
 
+.courses_nav a.disabled{
+	background-color: #450101;
+	color: gray;
+	pointer-events: none;
+	text-align: center;
+	border: none;
+	width: 100px;
+}
+
 #footer {
 	text-align: center;
 	padding-top: 20px;
@@ -93,9 +102,28 @@ hr{
 	background-color: #FFE8E3;
 }
 
+.code_content{
+	text-align: left;
+	padding: 20px 3vw;
+	margin: 20px 10vw;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #FFE8E3;
+}
+
 p {
 	text-align: left;
 	text-indent: 2em;
+}
+
+.tab1{
+	text-align: left;
+	text-indent: 2em;
+}
+
+.tab2 {
+	text-align: left;
+	text-indent: 4em;
 }
 
 iframe{

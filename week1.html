@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Week 1 </title>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<span style="font-size: 30px;"> Wootark Kim </span>
+			<br><br>
+			<span style="font-size: 20px;"> CST 370 Learning Journal </span>
+			<br><br>
+
+			<nav>
+				<a href="cst370.html"> CST 370 Main Page </a>
+			</nav>
+		</header>
+		
+		<main>
+			<h4> Week 0 & 1  </h4>
+			<h4> ( 3 January 2026 )  to  ( 11 January 2026 ) </h4>
+	
+			<div class="course_content">
+				<b>What is an Algorithm?</b>
+
+				<p>
+					I've learned that algorithm is a sequence of unambiguous instructions for solving a problem for obtaining a required output for any legitimate input in a finite amount of time (thus why eventually  Big O notation will become such a big deal later on).
+				</p>
+
+				<p> 
+					A beginning problem we focused on was finding the greatest common denominator (gcd) when given 2 integers. One of the algorithm we've learned to solve this is called "Euclid's Algorithm." It is defined as the repeated application of the equality:
+					<div class="code_content">
+						gcd(m, n) = gcd(n, m mod n)
+					</div>
+					until the second number becomes 0, at which point the first number becomes the answer. Using JAVA, I can demonstrate Euclid's algorithm using either an iterative version or a recursive version:
+				</p>
+		
+				<p>
+					<div class="code_content">
+						<b>Iterative Version:</b> <br><br>
+
+						public static int gcd(int a, int b){
+							<div class="tab1"> while (b!=0){ </div>
+								<div class="tab2"> int remainder = a%b; </div>
+								<div class="tab2"> a=b; </div>
+								<div class="tab2"> b=remainder; </div>
+							<div class="tab1"> } </div>
+							<div class="tab1"> return a; </div>
+						}
+					</div>
+
+					<div class="code_content">
+						<b>Recursive Version:</b> <br><br>
+
+						public static int gcd(int a, int b){
+							<div class="tab1"> if (b==0) { </div>
+								<div class="tab2"> return a; </div>
+							<div class="tab1"> } </div>
+							<div class="tab1"> return gcd(b, a%b); </div>
+						}
+					</div>
+					A cool thing to add on is that apparently every iterative solution can be implemented as a recursive solution and vice versa. This is described as iteration and recursion being "expressively equivalent."
+				</p>
+				
+				<p>
+					With that being said, a problem can be solved using multiple algorithms. Another one which can solve the gcd problem is using the Consecutive Integer Checking Algorithm approach. It is defined as:
+					<div class="code_content">
+						<ol>
+							<li> Assign the value of min {m, n} to t</li>
+							<li> Divide m by t. If the remainder is 0, go to step 3; otherwise go to step 4</li>
+							<li> Divide n by t. If the remainder is 0, return t and stop; otherwise go to step 4</li>
+							<li> Decrease t by 1 and go to step 2</li>
+						</ol>
+					</div>
+				</p>
+				
+				<b> Recursion vs Iteration </b>
+				
+				<p>
+					Iterative algorithm uses loops and data structures like stacks and queues to solve a problem.
+				</p>
+				<p>
+					Recursive algorithm is an algorithm which calls itself again and again until a base condition is achieved.
+				</p>
+
+				<b> Types of Problems </b>
+				<p>
+					So if algorithms are used to solve problems, then what types of problems will I come across? Some of the most common and important problem types I need to become familiar with are:
+
+				<ul>
+					<li> Sorting </li>
+					<li> Searching </li>
+					<li> String processing </li>
+					<li> Graph problems </li>
+					<li> Combinatorial problems </li>
+					<li> Geometric problems </li>
+					<li> Numerical problems </li>
+				</ul>
+					Take for example the palindrome. That one is an example of a String Processing problem, whereas the GCD problem (where I would use Euclid's algorithm to solve it) is an example of a Numerical Problem.
+				</p>
+			</div>
+		</main>
+
+
+		<div id="footer"> </div>
+		
+		<script src="js/include.js "> </script>
+	</body>
+</html>
