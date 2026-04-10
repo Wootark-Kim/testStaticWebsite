@@ -36,7 +36,7 @@ header a{
 
 header a:hover {
     text-decoration: underline;
-    color: orange;
+    color: #FC7A08;
     transform: scale(1.05);
 }
 
@@ -113,4 +113,13 @@ main{
     font-family: "Playfair Display", arial, "Consolas", monospace;
     font-size: 18px;
     font-size: clamp(10px, 2vw, 18px);
+
+    /* transformation settings */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.profile-button:hover{
+    background-color: #FC7A08;
+    transform: scale(1.05);
 }
