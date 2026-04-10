@@ -1,0 +1,69 @@
+
+html, body{
+	background-color: black;
+	margin: 0; /* removes the margin padding to allow header background color to stretch from left to right */
+}
+
+/* HEADER ==============================================================================================================*/
+header{
+    display: flex;
+    justify-content: space-between; /* pushes first element to the left and the last element to the right */
+    background-color: black;
+    min-height: 9vh;        /* ensures that the header is at least always 10% of the screen and doesnt get smaller */
+    align-items: center;    /* vertical centering */
+    padding-left: 2vw;
+    color: white;
+}
+
+#header-nav-links {
+    padding-right: 10vh;
+    display: flex;
+    gap: 20px;
+    font-family: "Playfair Display", "Consolas", monospace;
+}
+
+header span{
+    font-size: clamp(10px, 2vw, 16px); /* text wont go smaller than 16px and larger than 20px*/
+    font-family: "Playfair Display", "Consolas", monospace;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 1.0s ease;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: orange;
+    transform: scale(1.05);
+}
+
+/* MAIN ==============================================================================================================*/
+main{
+	text-align: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile{
+    display: flex;              /* essential to make "flex-direction" work*/
+	flex-direction: row;
+}
+
+#frontPageProfilePicture{
+    width: 50%;
+}
+
+#frontPageProfilePicture img{
+    width: 100%;                /* make the image take up n% of the width of the parent container */
+    height: auto;
+}
+
+#frontPageProfileDescription{
+    width: 50%;
+	background-color: #1F1F1F;
+	color: white;
+	font-family: "Playfair Display", arial, "Consolas", monospace;
+}
