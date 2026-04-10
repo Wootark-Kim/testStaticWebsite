@@ -31,6 +31,7 @@ header a{
     text-decoration: none;
     color: white;
     transition: color 0.3s ease, transform 1.0s ease;
+    font-size: clamp(10px, 2vw, 16px);
 }
 
 header a:hover {
@@ -41,7 +42,6 @@ header a:hover {
 
 /* MAIN ==============================================================================================================*/
 main{
-	text-align: center;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
@@ -52,18 +52,65 @@ main{
 	flex-direction: row;
 }
 
+/* LEFT SIDE */
 #frontPageProfilePicture{
     width: 50%;
 }
 
 #frontPageProfilePicture img{
     width: 100%;                /* make the image take up n% of the width of the parent container */
-    height: auto;
+    height: 100%;
+    object-fit: cover;          /* prevents img from "stretching" when browser window size changes */
 }
 
+/* RIGHT SIDE */
 #frontPageProfileDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 50%;
 	background-color: #1F1F1F;
 	color: white;
 	font-family: "Playfair Display", arial, "Consolas", monospace;
+	padding-top: 5vh;
+	padding-left: 10vh;
+}
+
+#profile-title{
+	font-family: "Playfair Display", arial, "Consolas", monospace;
+	color: #E3E3E3;
+	font-size: clamp(20px, 5vw, 60px);
+}
+
+#profile-title-support{
+	font-family: "Playfair Display", arial, "Consolas", monospace;
+	color: #CFCFCF;
+	font-size: clamp(20px, 5vw, 25px);
+	padding-right: 10vh;
+	padding-bottom: 2vh;
+}
+
+#profile p{
+    font-family: "Playfair Display", arial, "Consolas", monospace;
+    color: #CFCFCF;
+    font-size: clamp(10px, 2vw, 20px);
+    padding-right: 10vh;
+    padding-bottom: 5vh;
+}
+
+#profile-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 7vh;
+}
+
+.profile-button{
+    background-color: #CFCFCF;
+    border: none;
+    padding: 15px 35px;
+    font-family: "Playfair Display", arial, "Consolas", monospace;
+    font-size: 18px;
+    font-size: clamp(10px, 2vw, 18px);
 }
