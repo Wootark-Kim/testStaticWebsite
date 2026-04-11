@@ -1,0 +1,90 @@
+html, body{
+	background-color: black;
+	margin: 0; /* removes the margin padding to allow header background color to stretch from left to right */
+}
+
+/* HEADER ==============================================================================================================*/
+header{
+    display: flex;
+    justify-content: space-between; /* pushes first element to the left and the last element to the right */
+    background-color: black;
+    min-height: 9vh;        /* ensures that the header is at least always 10% of the screen and doesnt get smaller */
+    align-items: center;    /* vertical centering */
+    padding-left: 2vw;
+    color: white;
+}
+
+#header-nav-links {
+    padding-right: 10vh;
+    display: flex;
+    gap: 20px;
+    font-family: "Playfair Display", "Consolas", monospace;
+}
+
+header span{
+    font-size: clamp(10px, 2vw, 16px); /* text wont go smaller than 16px and larger than 20px*/
+    font-family: "Playfair Display", "Consolas", monospace;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 1.0s ease;
+    font-size: clamp(10px, 2vw, 16px);
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #FC7A08;
+    transform: scale(1.05);
+}
+
+/* MAIN ==============================================================================================================*/
+main{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+#experience-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	background-color: #1F1F1F;
+	color: black;
+	font-family: "IBM Plex Sans", "Playfair Display", arial, "Consolas", monospace;
+}
+
+#resume{
+    margin: 7vh auto;               /* helps to center the resume container */
+    padding: 10px 40px 20px 40px;
+    box-sizing: border-box;         /* adds padding without changing the container's size */
+    display: flex;
+    flex-direction: column;
+    background-color: #E0E0E0;
+    width: clamp(350px, 70vw, 1000px); /* sets the minimum and maximum container size */
+    border-radius: 15px;
+}
+
+.section{
+    justify-content: center;
+    text-align: center;
+}
+
+/* turn hr into a visible horizontal line */
+hr{
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.skills .row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.skills b {
+    min-width: 135px;  /* controls alignment of all categories */
+}

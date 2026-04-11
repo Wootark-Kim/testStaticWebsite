@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Home </title>
-		<link href="../css/profileStyles.css" rel="stylesheet">
+		<link href="../css/experience.css" rel="stylesheet">
 
         <!-- configurations for "Playfair Display" from Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,88 @@
                 <a href="https://www.linkedin.com/in/wootark-kim" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
             </div>
 		</header>
-    </body>
 
+        <main>
+            <!-- RESUME CONTENT -->
+            <div id="experience-content">
+                <div id="resume">
+
+                    <!-- TECHNICAL SKILLS SECTION ===================================================================-->
+                    <p class="section"> <b>TECHNICAL SKILLS</b> </p>
+
+                    <div class="skills">
+                        <div class="row">
+                            <b>Programming:</b>
+                            <span>Python, Java, C++, SQL</span>
+                        </div>
+
+                        <div class="row">
+                            <b>Developer Tools:</b>
+                            <span>Git, GitHub, Codespaces, GitLab</span>
+                        </div>
+
+                        <div class="row">
+                            <b>Frameworks:</b>
+                            <span>React, Django</span>
+                        </div>
+
+                        <div class="row">
+                            <b>Database:</b>
+                            <span>PostgreSQL, SQLite</span>
+                        </div>
+
+                        <div class="row">
+                            <b>Data Engineering:</b>
+                            <span>Dagster</span>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <!-- EXPERIENCE SECTION =========================================================================-->
+                    <p class="section"> <b>EXPERIENCE</b> </p>
+
+                    <p>
+                        <b>Full-Stack Software Engineer | Volunteer Service Internship</b> <br>
+                        <b>American Technology Initiative Inc.</b> | March 2026 - April 2026
+                    </p>
+
+                    <ul>
+                        <li>Designed and implemented relational <b>database schemas</b> for a time tracking system using Django models, defining structured entities for projects, tasks, and time entries.</li>
+                        <li>Built and maintained backend services using <b>Django</b>, including RESTful <b>API endpoints</b> for time entry creation, retrieval, and reporting</li>
+                        <li>Integrated frontend <b>React/TypeScript</b> application with backend APIs to display dynamic dashboards, tables, and aggregated time-based analytics</li>
+                        <li>Debugged full-stack issues across database, API, and UI layers, resolving inconsistencies in data transformation</li>
+                        <li>Served as company's <b>GitLab administrator</b> to oversee team's version control workflows including branching strategies and merge request processes</li>
+                    </ul>
+
+                    <p>
+                        <b>Software Developer | Micro-Internship</b> <br>
+                        <b>CTI/CodeDay - Dagster</b> | March 2026
+                    </p>
+
+                    <ul>
+                        <li>Contributed to <b>Dagster</b>, an open-source data orchestration software project that aims to manage data <b>pipeline workflow</b></li>
+                        <li>Diagnosed and resolved a runtime error in Dagster data pipeline infrastructure where the <b>gRPC server</b> failed to access run storage when deployed through Docker</li>
+                        <li>Identified root cause as a <b>SQLite</b> concurrent access limitation between the local Dagster orchestrator and an isolated Docker container. Replaced it with a PostgreSQL storage backend to support concurrent multiprocess access</li>
+                        <li>Configured dagster.yaml file to replace the default SQLite storage backend with <b>PostgreSQL</b> for reliable shared storage across isolated environments</li>
+                        <li>Documented and shared the solution on <b>GitHub</b> to assist other developers facing the development setup issue: <a href="https://github.com/dagster-io/dagster/issues/32031" target="_blank" rel="noopener noreferrer"> github.com/dagster-io/dagster/issues/32031 </a></li>
+                    </ul>
+
+                    <p>
+                        <b>Cell-line Data Analyst</b> <br>
+                        <b>Mabplex USA</b> | May 2023 - July 2024
+                    </p>
+
+                    <ul>
+                        <li>Programmed <b>bioreactor</b>’s CO2, O2, and feeding parameters</li>
+                        <li>Prepared analysis for cell-line development and optimization</li>
+                        <li>Applied <b>image processing</b> techniques to derive and analyze single-cell data</li>
+                        <li>Documented procedures and collaborated with cross-functional teams to align on reporting</li>
+                        <li>Operate and monitor analytical instruments (gas analyzer, Vi-cell, cell imaging, HPLC, etc.)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </main>
+    </body>
 
 </html>
