@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Week 1 </title>
+		<link href="../css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<span style="font-size: 30px;"> Wootark Kim </span>
+			<br><br>
+			<span style="font-size: 20px;"> CST 438 Learning Journal </span>
+			<br><br>
+
+			<nav>
+				<a href="../cst438.html"> CST 438 Main Page </a>
+			</nav>
+		</header>
+		
+		<main>
+			<h4> Week 1  </h4>
+			<h4> ( 22 June 2026 )  to  ( 6 June 2026 ) </h4>
+	
+			<div class="course_content">
+				<b>Understanding Software Engineering</b>
+
+				<p>
+					I never quite asked myself what the difference between "programming" and "software engineering" was. Kind of mentally chalked up
+                    software engineering as a more "professional" programming (whatever that may be). Reading the book "Software Engineering at Google: 
+                    Lessons Learned from Programming Over Time" definitely provided a more solid line on the difference between those 2 terms. 
+				</p>
+
+				<p> 
+					From my simplified understanding it's essentially:
+					<div class="code_content">
+						<p><b>Programming:</b></p>
+                        <p>Writing code.</p>
+					</div>
+					
+					<div class="code_content">
+						<p><b>Software Engineering:</b></p>
+                        <p>Utilizing various strategies to sustainably structure and maintain said code</p>
+					</div>
+				</p>
+		
+                <p>
+                    I must say, I think I'm quite lucky in that I actually enjoy planning and learning about project folder structures,
+                    managing dependencies, utilizing frameworks, etc. which is what software engineering seems to be more about. Most of my peers 
+                    seem to enjoy just the "coding" aspect.
+                </p>
+
+                <p>
+                    With that being said, it can get overwhelming when occasionally I get flooded with dozens or even hundreds of "deprecated" 
+                    warning messages in the terminal from various libraries and dependencies when compiling or starting up certain applications. 
+                    I find it equally amusing when tutorials seem to acknowledge such a given state and simply say
+                    "ignore them, that's normal" (which I assume falls under the category of violating the "shifting left" strategy, ha).
+                </p>
+
+                <p>
+                    Aside from the textbook materials, there were a few key concepts I learned along the way this week:
+                </p>
+
+                <div class="code_content">
+					<p><b>3-tier Layered Application Architecture</b></p>
+                    <p>The controller layer extracts relevant data from a user's HTTP request and pases it to the service layer</p>
+                    <p>The service layer applies application rules (including validation) and coordinates database actions through repositories</p>
+                    <p>The repository layer is reponsible for performing database operations (create, read, update, delete [CRUD] without knowing why they are needed)</p>
+				</div>
+
+                <div class="code_content">
+					<p><b>3-tier Layered Application Flowchart of Data Flow</b></p>
+                    <p>
+                        The controller sends a request to the service layer. The service layer applies business logic and asks the 
+                        repository for data. The repository retrieves the data from the database and returns it to the service. 
+                        The service performs any additional business logic and returns the result to the controller.
+                    </p>
+                    <p>So the flowchart would look something like:</p>
+                    <p>
+                        controller -> service -> repository -> database -> repository -> service -> controller -> views
+                    </p>
+                </div>
+
+                <p>I would say understanding these key concepts definitely helped me in mentally understanding the structure and logic of a Springboot project</p>
+		</main>
+
+
+		<div id="footer"> </div>
+		
+		<script src="../js/include.js "> </script>
+	</body>
+</html>
