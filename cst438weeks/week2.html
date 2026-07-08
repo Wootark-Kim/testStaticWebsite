@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Week 1 </title>
+        <link href="../css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <span style="font-size: 30px;"> Wootark Kim </span>
+            <br><br>
+            <span style="font-size: 20px;"> CST 438 Learning Journal </span>
+            <br><br>
+
+            <nav>
+                <a href="../cst438.html"> CST 438 Main Page </a>
+            </nav>
+        </header>
+
+        <main>
+            <h4> Week 2  </h4>
+            <h4> ( 1 July 2026 )  to  ( 7 July 2026 ) </h4>
+
+            <div class="course_content">
+                <b>Learning Journal on React</b>
+
+                <p>
+                    Over the past few days, I've been keeping notes on some React fundamentals. Here's some of the following topics and points I've learned
+                </p>
+
+
+                <div class="code_content">
+                    <p><b>What is a component?:</b></p>
+                    <p>A component is just a function that returns html (or technically jsx). A component is not the file itself. In other words, a React component is just a function defining what a certain part of a website looks like.</p>
+                </div>
+
+                <div class="code_content">
+                    <p><b>What is a state?</b></p>
+                    <p>A state is just a variable holding some data that React watches. When state changes, React automatically updates (re-renders) the component on the browser.</p>
+                </div>
+
+                <div class="code_content">
+                    <p><b>Declaring state and the usage of “usestate” function</b></p>
+                    <p>A React component declares a state through the usestate function. For example:</p>
+
+                    <p>Example 1</p>
+                    <div class="code_content">
+                        const [message, setMessage] = useState("");
+                    </div>
+                    <p>This code means: “Create a piece of state called message. Initially it is an empty string. Give me a function called setMessage to update it”</p>
+
+                    <p>Example 2</p>
+                    <div class="code_content">
+                        const [orders, setOrders] = useState([]);
+                    </div>
+                    <p>This code means: “"Create a piece of state called orders. Initially it is an empty array. Give me a function called setOrders to update it."</p>
+
+                    <p>Example 3</p>
+                    <div class="code_content">
+                        const [customer, setCustomer] = useState({ name: "", email: "", password: "" });
+                    </div>
+                    <p>This code means: “"Create a piece of state called customer, and give me a function called setCustomer that I must use whenever I want to change it. Initially, customers should contain this object."</p>
+                </div>
+
+                <div class="code_content">
+                    <p><b>How React components are organized</b></p>
+                    <p>A React component seems to be organized in this fashion:</p>
+
+                    <ol>
+                        <li>Imports</li>
+                        <li>State creation/declaration</li>
+                        <li>Event Handlers</li>
+                        <li>Custom Helper Functions (optional)</li>
+                        <li>Returning jsx (or other forms of ui)</li>
+                        <li>Export</li>
+                    </ol>
+                </div>
+
+                <div class="code_content">
+                    <p><b>React vs ReactRouter</b></p>
+                    <p>
+                        A React Router is a routing library “add-on” for React.
+                        React Router provides routing functionality. For example, it introduces these 3 tags:
+                        &lt;BrowserRouter&gt; &lt;Routes&gt; and &lt;Route&gt;
+                    </p>
+
+                    <p>BrowserRouter supplies the URL data</p>
+                    <p>Routes uses URL data to pick a match</p>
+                    <p>Route defines the mapping</p>
+
+                    <p>These 3 tags must be used in conjunction to provide any meaningful results.</p>
+                </div>
+
+                <p>More notes on: https://docs.google.com/document/d/19x6O7PvfVgLvpyuOsmUYt1hOh-so6csnJo40IqzeO7M/edit?usp=sharing</p>
+
+                <div class="code_content">
+                    <p><b>Personal thoughts on React</b></p>
+                    <p>
+                        I can see how React can be incredibly powerful and useful, but it does, however, feel overly complex for a beginner to learn.
+                        Perhaps it is because it feels abstract. A lot of sense of "groundedness" disappeared when compared to vanilla html + css + and js coding,
+                        especially in regard to visual spacial clarity. Often in vanilla html, you pretty much understand that a given file is equal to one page,
+                        and the contents written from top to bottom often appear in the same sequential order on the browser.
+                    </p>
+
+                    <p>
+                        With React, however, everything is compartmentalized in components, and several components from multiple files can be referenced into one file.
+                        React also, depending on the project, utilizes JavaScript or TypeScript, which in itself isn't too bad, but then you realize there's a lot of
+                        React specific methods to learn and you need to figure out how to read them.
+                    </p>
+
+                    <p>
+                        A tutorial video I was watching said something that kind of resonated with how I felt when learning React:
+                        "When you are learning React, you quickly feel like you're not learning how to read or write JavaScript or TypeScript. You don't even feel like you're
+                        learning how to code or becoming a better code reader. The whole time it just feels like you're learning how to deal with React's layer of abstractness"
+                    </p>
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer style="	text-align: center;
+            padding-top: 20px;
+            margin-top: 40px;
+            background-color: #450101;
+            font-size: 0.7em;
+            color: orange;">
+            <img id="logo" src="../img/logo.png" alt="image of csumb logo"><br>
+            CST336 Internet Programming. 2025; Kim <br><br><br>
+        </footer>
+
+        <script src="../js/include.js "> </script>
+    </body>
+</html>
